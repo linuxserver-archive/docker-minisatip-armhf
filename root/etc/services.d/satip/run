@@ -1,0 +1,5 @@
+#!/usr/bin/with-contenv sh
+
+cd "$SATIP_ROOT}"
+
+./minisatip -x 8875

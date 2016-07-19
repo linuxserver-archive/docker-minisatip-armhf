@@ -2,14 +2,14 @@
 
 The [LinuxServer.io](https://www.linuxserver.io/) team brings you another quality container release featuring auto-update on startup, easy user mapping and community support. Be sure to checkout our [forums](https://forum.linuxserver.io/index.php) or for real-time support our [IRC](https://www.linuxserver.io/index.php/irc/) on freenode at `#linuxserver.io`.
 
-# linuxserver/satip
+# lsioarmhf/satip
 
 Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards.
 
 ## Usage
 
 ```
-docker create --name=minisatip -v /etc/localtime:/etc/localtime:ro -e PGID=<gid> -e PUID=<uid> -p 1234:1234 linuxserver/satip
+docker create --name=minisatip -v /etc/localtime:/etc/localtime:ro -e PGID=<gid> -e PUID=<uid> -p 1234:1234 lsioarmhf/satip
 ```
 
 **Parameters**
@@ -20,7 +20,7 @@ docker create --name=minisatip -v /etc/localtime:/etc/localtime:ro -e PGID=<gid>
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
 
-It is based on alpine, for shell access whilst the container is running do `docker exec -it <container-name> /bin/bash`.
+It is based on alpine-armhf, for shell access whilst the container is running do `docker exec -it <container-name> /bin/bash`.
 
 ### User / Group Identifiers
 

@@ -12,7 +12,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 
 # lsioarmhf/minisatip
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/minisatip.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/minisatip.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-minisatip)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-minisatip/)
+[![](https://images.microbadger.com/badges/image/lsioarmhf/minisatip.svg)](http://microbadger.com/images/lsioarmhf/minisatip "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/minisatip.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/minisatip.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-minisatip)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-minisatip/)
 [hub]: https://hub.docker.com/r/lsioarmhf/minisatip/
 
 Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards. [Minisatip](https://github.com/catalinii/minisatip)
@@ -74,6 +74,6 @@ You can then use your cards as DVB inputs in apps such as tvheadend.
 
 ## Versions
 
++ **11.09.16:** Add layer badges to README.
 + **06.09.16:** Add badges to README.
 + **15.08.16:** Initial Release.
-

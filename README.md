@@ -85,7 +85,7 @@ You can then use your cards as DVB inputs in apps such as tvheadend.
 
 ## Versions
 
-+ **14-10-16:** Add version layer information.
++ **14.10.16:** Add version layer information.
 + **18.09.16:** Add support for Common Interface.
 + **11.09.16:** Add layer badges to README.
 + **06.09.16:** Add badges to README.

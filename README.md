@@ -23,13 +23,16 @@ Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and
 
 ```
 docker create \
+docker create \
 --name=minisatip \
 -e PGID=<gid> -e PUID=<uid> \
 -e TZ=<timezone> \
+-e RUN_OPTS=<parameter> \
 -p 8875:8875 -p 554:554 \
 -p 1900:1900/udp
 --device=/dev/dvb \
 lsioarmhf/minisatip
+
 ```
 
 ## Parameters
@@ -46,6 +49,7 @@ http://192.168.x.x:8080 would show you what's running INSIDE the container on po
 * `-v /config` -
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
+* `-e RUN_OPTS` additional runtime parameters - see below for explanation
 * `--device=/dev/dvb` - for passing through Tv-cards.
 * `-e TZ` for timezone information, eg Europe/London
 
@@ -61,6 +65,11 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
   $ id <dockeruser>
     uid=1001(dockeruser) gid=1001(dockergroup) groups=1001(dockergroup)
 ```
+
+### Additional runtime parameters
+
+In some cases it might be necessary to start minisatip with additional parameters, for example to configure a unicable LNB. Add the parameters you need and restart the container. Be sure to have the right parameters set as adding the wrong once might lead to the container not starting correctly.
+For a list of minisatip parameters visit [minisatip][minisaturl] page.
 
 ## Setting up the application
 `IMPORTANT... THIS IS THE ARMHF VERSION`
@@ -81,10 +90,11 @@ You can then use your cards as DVB inputs in apps such as tvheadend.
 
 * image version number
 
-`docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/minisatip`
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' lsioarmhf/minisatip`
 
 ## Versions
 
++ **30.10.16:** Add run opts.
 + **14.10.16:** Add version layer information.
 + **18.09.16:** Add support for Common Interface.
 + **11.09.16:** Add layer badges to README.

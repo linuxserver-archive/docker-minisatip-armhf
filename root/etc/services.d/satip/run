@@ -1,7 +1,7 @@
 #!/usr/bin/with-contenv bash
 
-cd /app/satip
+cd /app/satip || exit
 
 exec \
-	./minisatip -x 8875
+	./minisatip "${RUN_OPTS}" -f -x 8875
 

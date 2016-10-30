@@ -90,7 +90,7 @@ You can then use your cards as DVB inputs in apps such as tvheadend.
 
 * image version number
 
-`docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/minisatip`
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' lsioarmhf/minisatip`
 
 ## Versions
 

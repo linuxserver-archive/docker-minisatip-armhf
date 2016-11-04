@@ -29,7 +29,8 @@ docker create \
 -e TZ=<timezone> \
 -e RUN_OPTS=<parameter> \
 -p 8875:8875 -p 554:554 \
--p 1900:1900/udp
+-p 1900:1900/udp \
+-v </path/to/appdata>:/config \
 --device=/dev/dvb \
 lsioarmhf/minisatip
 

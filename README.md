@@ -2,6 +2,8 @@
 [forumurl]: https://forum.linuxserver.io
 [ircurl]: https://www.linuxserver.io/irc/
 [podcasturl]: https://www.linuxserver.io/podcast/
+[appurl]: https://github.com/catalinii/minisatip
+[hub]: https://hub.docker.com/r/lsioarmhf/minisatip/
 
 [![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
 
@@ -12,12 +14,10 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 
 # lsioarmhf/minisatip
 [![](https://images.microbadger.com/badges/version/lsioarmhf/minisatip.svg)](https://microbadger.com/images/lsioarmhf/minisatip "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/lsioarmhf/minisatip.svg)](http://microbadger.com/images/lsioarmhf/minisatip "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/minisatip.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/minisatip.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-minisatip)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-minisatip/)
-[hub]: https://hub.docker.com/r/lsioarmhf/minisatip/
 
 Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards. [Minisatip](https://github.com/catalinii/minisatip)
 
-[![minisatip](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/minisatip-icon.png)][minisaturl]
-[minisaturl]: https://github.com/catalinii/minisatip
+[![minisatip](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/minisatip-icon.png)][appurl]
 
 ## Usage
 
@@ -69,7 +69,7 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 ### Additional runtime parameters
 
 In some cases it might be necessary to start minisatip with additional parameters, for example to configure a unicable LNB. Add the parameters you need and restart the container. Be sure to have the right parameters set as adding the wrong once might lead to the container not starting correctly.
-For a list of minisatip parameters visit [minisatip][minisaturl] page.
+For a list of minisatip parameters visit [minisatip][appurl] page.
 
 ## Setting up the application
 `IMPORTANT... THIS IS THE ARMHF VERSION`

@@ -23,7 +23,6 @@ Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and
 
 ```
 docker create \
-docker create \
 --name=minisatip \
 -e PGID=<gid> -e PUID=<uid> \
 -e TZ=<timezone> \

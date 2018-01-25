@@ -23,7 +23,6 @@ Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and
 
 ```
 docker create \
-docker create \
 --name=minisatip \
 -e PGID=<gid> -e PUID=<uid> \
 -e TZ=<timezone> \
@@ -74,7 +73,7 @@ For a list of minisatip parameters visit [minisatip][appurl] page.
 ## Setting up the application
 `IMPORTANT... THIS IS THE ARMHF VERSION`
 
-Best used in conjunction with [tvheadend](https://github.com/linuxserver/docker-tvheadend)
+Best used in conjunction with [tvheadend](https://github.com/linuxserver/docker-tvheadend-armhf)
 
 There is no setup per se, other than adding your cards for passthrough. 
 
@@ -94,6 +93,7 @@ You can then use your cards as DVB inputs in apps such as tvheadend.
 
 ## Versions
 
++ **25.01.18:** Rebase to alpine 3.7.
 + **29.05.17:** Rebase to alpine 3.6.
 + **08.02.17:** Rebase to alpine 3.5 and only compile libs in dvb-apps.
 + **30.10.16:** Add run opts.

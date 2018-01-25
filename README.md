@@ -73,7 +73,7 @@ For a list of minisatip parameters visit [minisatip][appurl] page.
 ## Setting up the application
 `IMPORTANT... THIS IS THE ARMHF VERSION`
 
-Best used in conjunction with [tvheadend](https://github.com/linuxserver/docker-tvheadend)
+Best used in conjunction with [tvheadend](https://github.com/linuxserver/docker-tvheadend-armhf)
 
 There is no setup per se, other than adding your cards for passthrough. 
 

@@ -5,6 +5,8 @@
 [appurl]: https://github.com/catalinii/minisatip
 [hub]: https://hub.docker.com/r/lsioarmhf/minisatip/
 
+THIS IMAGE IS DEPRECATED. PLEASE USE THE MULTI-ARCH IMAGES AT `linuxserver/minisatip`
+
 [![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
 
 The [LinuxServer.io][linuxserverurl] team brings you another container release featuring easy user mapping and community support. Find us for support at:
@@ -93,6 +95,7 @@ You can then use your cards as DVB inputs in apps such as tvheadend.
 
 ## Versions
 
++ **20.01.19:** This image is deprecated. Please use the multi-arch images at linuxserver/minisatip
 + **28.08.18:** Rebase to alpine 3.8.
 + **25.01.18:** Rebase to alpine 3.7.
 + **29.05.17:** Rebase to alpine 3.6.
